@@ -62,18 +62,11 @@ This code controls that cool parallax image and scrolling effect. Change the ima
 
 This section of css. helps organize images to position and center the image to scale nicely on all screens */
 
-.center-small-image {
+.center-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-    
-.center-large-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 
 
