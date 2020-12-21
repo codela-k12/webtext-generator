@@ -33,6 +33,6 @@ Sample: https://sjquigley.github.io/pitt-fuego
 10. This will provide you with a published GitHub URL. 
 
 
-Peace a d love only, Stephen Quigley, University of Pittsburgh 2020
+Peace and love only, Stephen Quigley, University of Pittsburgh 2020
 
 
