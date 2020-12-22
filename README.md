@@ -6,7 +6,7 @@ We recommend you begin with one of our starter programs before using this one.
 
     
     
-##Get started!
+## Get started!
 
 
 1. Create a GitHub account. 
