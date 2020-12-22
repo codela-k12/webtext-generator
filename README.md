@@ -1,15 +1,12 @@
 # Pitt Fuego
 
-Abstract: This repository will allow the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great presentation/web page are embedded in the document. We've also provided hidden comments to help guide you through the process. 
+This repository will allow the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great presentation/web page are embedded in the document. We've also provided hidden comments to help guide you through the process. 
 
+We recommend you begin with one of our starter programs before using this one. 
 
     
     
 ##Get started!
-
-Instructional Video: : https://www.youtube.com/watch?v=drINeC4G40A
-
-Sample: https://sjquigley.github.io/pitt-fuego
 
 
 1. Create a GitHub account. 
@@ -33,6 +30,5 @@ Sample: https://sjquigley.github.io/pitt-fuego
 10. This will provide you with a published GitHub URL. 
 
 
-Peace and love only, Stephen Quigley, University of Pittsburgh 2020
-
+Check out our other cool coding tools [HERE](https://pitt-fuego.github.io/Pitt-Fuego-Coding-Tools/)
 
