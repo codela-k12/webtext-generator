@@ -1,15 +1,14 @@
 # Open Fuego
 
-Welcome to Pitt Fuego Lite! This repository will allow the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great presentation/web page are embedded in the document. We've also provided hidden comments to help guide you through the process. 
+Welcome to Pitt Webtext Generator! This tool allows the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great webtext or presentation are embedded in the document. We've also provided hidden comments to help guide you through the process. 
 
 We recommend you begin with one of our starter programs before using this one. 
-
     
     
 ##Get started!
 
 
-1. Go to repository Open Fuego repository: https://github.com/Open-Fuego/open-fuego 
+1. Go to repository Open Fuego repository: https://github.com/Open-Fuego/open-fuego-webtext-generator. 
 
 2. Click "Code" then "Download ZIP" to your local computer. 
 
