@@ -22,9 +22,9 @@ We recommend you begin with one of our starter programs before using this one.
 
 7. Once you have modified and added your files to your project file, you will want to publish to the web. GitHub provides a good solution for "free." Create a GitHub account, then create a new repository for this webtext. Click  "**uploading an existing file**" and upload your files to your repository and "**Commit changes**". You'll need ALL of your assets to make your webtext function properly. 
 
-8. Now go to your repository "**settings**". Scroll down to "**Pages**" and change the branch setting from "**none**" to "**main**." Then select "**Save**"
+8. Now go to your repository "settings." Scroll down to **"GitHub Pages"** in the left-hand menu. Change the source setting from **"none"** to **"main" "/root"** and then Click "Save"
 
-9. This process will provide you with a published GitHub URL.
+9. GitHub will now provide you with a published URL. (This process may take up to five minutes.)
 
 10. Test the URL in a browser. Magic, no? Actually, it's computer science.  
 
