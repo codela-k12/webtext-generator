@@ -1,6 +1,6 @@
 # Open Fuego Webtext Generator
 
-Welcome to Open Fuego Webtext Generator! This tool allows the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great webtext or presentation are embedded in the document. We've also provided hidden comments to help guide you through the process. See the [video](https://www.youtube.com/watch?v=QzMJtLUncIg).
+Welcome to Open Fuego Webtext Generator! This tool allows the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great webtext or presentation are embedded in the document. We've also provided hidden comments to help guide you through the process. See the [video tutorial](https://www.youtube.com/watch?v=QzMJtLUncIg).
 
 We recommend you begin with one of our starter programs before using this one. 
     
@@ -14,7 +14,7 @@ We recommend you begin with one of our starter programs before using this one.
 
 3. Find this folder in your downloads and move it to a secure place. You will return to this folder to manage your files and other assets like images, pdfs, etcetera. 
 
-4. Download and/or open a text editor like [atom.io](https://atom.io) or [notepad-plus-plus.org](notepad-plus-plus.org). 
+4. Download and/or open a text editor like [brackets.io](https://brackets.io) or preferred editor. 
 
 5. Use the text editor to open the **index.htm**l and **style.css** documents from your project folder.  
 
