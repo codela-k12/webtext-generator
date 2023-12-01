@@ -133,6 +133,8 @@ This section of CSS helps organize images to position and center the image to sc
       margin-right: auto;
       padding-top: 100px;
       padding-bottom: 100px;
+      padding-right: 0px;
+      padding-left: 0px;
   }
 
 
