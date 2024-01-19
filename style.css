@@ -2,6 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
 }
 
 .hero-image {
@@ -121,22 +122,35 @@ body, html {
 
 This section of CSS helps organize images to position and center the image to scale nicely on all screens */
 
-.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
-.imgageblock {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 100px;
-      padding-bottom: 100px;
-      padding-right: 0px;
-      padding-left: 0px;
-  }
+img.frame {
+    border: 5px solid gold;
+    border-radius: 5%;
+    filter: grayscale(0%);
+}
 
+
+.caption {
+    text-align: center;
+}
+
+.polaroid {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.polaroidcontainer {
+    text-align: center;
+    padding: 10px 20px;
+  }
 
 /*  - PARALLAX -
 This code controls that cool parallax image and scrolling effect. Change the image "fuego.jpg" below to match your asset.*/
@@ -155,7 +169,6 @@ This code controls that cool parallax image and scrolling effect. Change the ima
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
-
 }
 
 
@@ -199,7 +212,7 @@ The following CSS is responsible for your photo grid .row, .column, .column img 
 }
 
 
-/* Responsive layout - makes grid a one column-layout instead of two or three columns */
+/* Photo Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
 @media screen and (max-width: 800px) {
     .column {
         flex: 75%;
@@ -231,7 +244,7 @@ this CSS element centers text elements*/
 }
 
 
-#logo {
+.logo {
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 20px;
@@ -240,6 +253,6 @@ this CSS element centers text elements*/
     text-align: center;
   }
 
-#footer {
+.footer {
         text-align: center;
     }

@@ -1,35 +1,68 @@
-# Open Fuego Webtext Generator
+# Codelo Webtext Generator
 
-Welcome to Open Fuego Webtext Generator! This tool allows the user to mix and match div. blocks to build a quick website similar to an Adobe Spark. All of the design elements you need to make a great webtext or presentation are embedded in the document. We've also provided hidden comments to help guide you through the process. See the [video tutorial](https://www.youtube.com/watch?v=QzMJtLUncIg).
-
-We recommend you begin with one of our starter programs before using this one. 
+Welcome to Codelo Webtext Generator! This tool allows the user to mix and match div. blocks to quickly build a website similar to Wix, Weebly, or Wordpress. All of the design elements you need to make a smart website or web presentation are embedded in a code repository at the bottom of the document. We've also provided hidden comments to help guide you through the process.
     
+[Go to Codela](https://codela-k12.github.io/codela-tools/) to find more code-based tools and projects for the English Language Arts classroom.<p>&nbsp;</p>
+
     
-##Get started!
+## Get started! 
 
+1. Scroll to the top of this repository and click the green "**Code**" button. Select "**Download ZIP**" to download ALL repository files to your local computer. These are all the project files you'll need to get started building your own website. 
 
-1. Go to the [Open Fuego Webtext Generator Repository](https://github.com/Open-Fuego/open-fuego-webtext-generator)
+2. Find this project folder in your downloads and move it to a secure place on your local computer. You'll return to this project folder to manage your scripts, images, and other assets. 
 
-2. Click the green "**Code**" button then select "**Download ZIP**" to your local computer. 
+3. Download and/or open a text editor like [Pulsar](https://pulsar-edit.dev) or [Visual Studio Code](https://code.visualstudio.com/download) (Mac / Windows / Linux) or [Code Pad Text Editor](https://chrome.google.com/webstore/detail/code-pad-text-editor/adaepfiocmagdimjecpifghcgfjlfmkh?hl=en-GB) for Chromebooks. See instructions below on how to optimize your text editor.       
 
-3. Find this folder in your downloads and move it to a secure place. You will return to this folder to manage your files and other assets like images, pdfs, etcetera. 
+4. Use the text editor to open your project folder and all project files.   
 
-4. Download and/or open a text editor like [brackets.io](https://brackets.io) or preferred editor. 
+5. Select the index.html file. Start working with code by reading through the code comments embedded in this HTML document. This is where you'll find all the information you need to work with code! 
 
-5. Use the text editor to open the **index.htm**l and **style.css** documents from your project folder.  
+6. Once you have modified and added your files to your project file, you'll want to publish your project to the web. GitHub provides a good solution for "free" publishing. [Open GitHub](https://github.com), sign-in, or create a GitHub account.
 
-6. Start working with code by reading through the index.html where you'll find instructions on how to build your own webtext! 
+7. Once you have an account, create a "**new repository**" to store your files. Click  "**uploading an existing file**" and add ALL of your individual project assets to your repository. After each asset is uploaded, hit "**Commit changes**." 
 
-7. Once you have modified and added your files to your project file, you will want to publish to the web. GitHub provides a good solution for "free." Create a GitHub account, then create a new repository for this webtext. Click  "**uploading an existing file**" and upload your files to your repository and "**Commit changes**". You'll need ALL of your assets to make your webtext function properly. 
+7. Now you'll need to activate GitHub pages to create a website. In the repository top menu, select "**settings**." A new page will open. In the left-hand menu, select "**Pages**." Change the source setting from "**none**" to "**main**" "**/root**" and then Click "**Save**."
 
-8. Now go to your repository "settings." Scroll down to **"GitHub Pages"** in the left-hand menu. Change the source setting from **"none"** to **"main" "/root"** and then Click "Save"
+8. Refresh your page after one minute. GitHub will provide you with a published GitHub URL. (This process may take more than on minute.)
 
-9. GitHub will now provide you with a published URL. (This process may take up to five minutes.)
+9. Test the URL in a browser. Magic, no? Actually, it's computer science. <p>&nbsp;</p>  
+ 
 
-10. Test the URL in a browser. Magic, no? Actually, it's computer science.  
+## Text Editors 
 
+Setting up Pulsar or VS Code for Mac / Windows / Linux or CodePad for Chromebooks 
 
-Check out our other cool coding tools at [Open Fuego](https://open-fuego.github.io/Open-Fuego-Coding-Tools/).
+### Pulsar (Open-Source for Mac / Windows / Linux)
+[See Video Tutorial](https://youtu.be/dKcJm4V53ig)
+
+1. Download "**[Pulsar](https://pulsar-edit.dev)**" Pulsar comes with "Spell Check" already installed. 
+1. Add HTML Preview 
+	* from the dropdown menu, select **Packages>Open Package Manager**
+	* select **+ Install**
+	* in the search bar type "**Atom-HTML-preview**." 
+	* select the package built by "**HARMSK**." Click "**Install**."
+1. Adjust text wrapping 
+	 -	from the dropdown menu, select **View>Toggle Soft Wrap** (this will force lines of code to conform to your view tab.)
+
+### Visual Studio Code (Mac / Windows /Linux)
+[See Video Tutorial](https://youtu.be/1onqFbSgeQo)
+
+1. Download "**[Visual Studio Code](https://code.visualstudio.com/download)**"
+1. Add HTML Preview 
+	* from the dropdown menu, select **View>Extension.**
+	* In the search bar type "**Live Preview**." Install.
+	* Right click on the index.html tab and select "**show preview**." You should see a live version of your work.
+1. Install Spell Check 
+	* from the dropdown menu, select **View>Extension.** 
+	* In the search bar type "**Code Spell Check**." Install.
+1. Adjust text wrapping on index.html 
+	* from the dropdown menu, select **View>Word Wrap** (this will force lines of code to conform to your viewer tab.)
+
+### Code Pad (Chromebook)
+
+1. Download "**[Code Pad Text Editor](https://chrome.google.com/webstore/detail/code-pad-text-editor/adaepfiocmagdimjecpifghcgfjlfmkh?hl=en-GB)**" from Chrome Web Store. 
+1. From the dropdown menu, select **Editor>IDE Preferences**
+1. Toggle "**Word wrap limit**" to the middle value (this will force lines of code to conform to your viewer tab.)<p>&nbsp;</p>
 
 
 
