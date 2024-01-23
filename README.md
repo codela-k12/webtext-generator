@@ -4,7 +4,7 @@ Welcome to Codelo Webtext Generator! This tool allows the user to mix and match 
     
 [Go to Codela](https://codela-k12.github.io/codela-tools/) to find more code-based tools and projects for the English Language Arts classroom.<p>&nbsp;</p>
 
-[Watch our 3-min Codela Webtext Generator tutorial.](https://youtu.be/kaWUeNY_Dh8)
+[Watch our 3-min Codela Webtext Generator tutorial.](https://youtu.be/KVUBbM7pIYw?si=81tQ1FS9097FdWJd)
 
     
 ## Get started! 
