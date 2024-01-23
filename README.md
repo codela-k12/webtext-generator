@@ -4,6 +4,8 @@ Welcome to Codelo Webtext Generator! This tool allows the user to mix and match 
     
 [Go to Codela](https://codela-k12.github.io/codela-tools/) to find more code-based tools and projects for the English Language Arts classroom.<p>&nbsp;</p>
 
+[Watch our 3-min Codela Webtext Generator tutorial.](https://youtu.be/kaWUeNY_Dh8)
+
     
 ## Get started! 
 
@@ -21,11 +23,11 @@ Welcome to Codelo Webtext Generator! This tool allows the user to mix and match 
 
 7. Once you have an account, create a "**new repository**" to store your files. Click  "**uploading an existing file**" and add ALL of your individual project assets to your repository. After each asset is uploaded, hit "**Commit changes**." 
 
-7. Now you'll need to activate GitHub pages to create a website. In the repository top menu, select "**settings**." A new page will open. In the left-hand menu, select "**Pages**." Change the source setting from "**none**" to "**main**" "**/root**" and then Click "**Save**."
+8. Now you'll need to activate GitHub pages to create a website. In the repository top menu, select "**settings**." A new page will open. In the left-hand menu, select "**Pages**." Change the source setting from "**none**" to "**main**" "**/root**" and then Click "**Save**."
 
-8. Refresh your page after one minute. GitHub will provide you with a published GitHub URL. (This process may take more than on minute.)
+9. Refresh your page after one minute. GitHub will provide you with a published GitHub URL. (This process may take more than on minute.)
 
-9. Test the URL in a browser. Magic, no? Actually, it's computer science. <p>&nbsp;</p>  
+10. Test the URL in a browser. Magic, no? Actually, it's computer science. <p>&nbsp;</p>  
  
 
 ## Text Editors 
