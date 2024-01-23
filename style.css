@@ -129,8 +129,8 @@ img {
 }
 
 img.frame {
-    border: 5px solid gold;
-    border-radius: 5%;
+    border: 5px solid black;
+    border-radius: 0%;
     filter: grayscale(0%);
 }
 
