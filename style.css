@@ -1,13 +1,15 @@
+/* Select readable font and text/background colors with good contrast. To search for different Google Fonts, go to https://www.w3schools.com/howto/howto_google_fonts.asp */
+
 body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
-}
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto';
+    color: black;
+    background-color: white;
+  }  
 
 .hero-image {
-    /* - HERO -
-    This code controls your "hero image." You will need to change hero.jpg to match your asset */
+/* This code controls your "hero image." You may need to change "hero.jpg" name/format to match your asset, or vice-versa */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
     height: 100%;
     background-attachment: fixed;
@@ -15,7 +17,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+  }
 
 /* Places text in the middle of the image */
 .hero-text {
@@ -24,89 +26,259 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+/* This selector controls hero-text class properties. 2em is 2x stated value. 5 em is 5x stated value. */
+.hero-text h1 {
+    font-family: default;
+    font-size: 5em;
     color: white;
-    font-size: 250%;
-}
+  }
 
 .hero-text h2 {
-    /* This section adds the text stylings for your hero block */
-    display: block;
-    font-size: 0.67em;
-    margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    font-family: default;
+    font-size: 2em;
+    color: white;
   }
-
+  
+ /* The textblock class is set to default colors. You will also need to adjust values in next textblock selector. */
 .textblock {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    display: block;
+    color: default;
+    background-color: default;
+    border: 0px solid black;
+    width: 55%;
+    padding: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: default;
+    font-size: 1.5em;
+    color: default;
   }
 
+ /* This code helps your textblock scale for smaller screens */
+  @media screen and (max-width: 800px) {
+    .textblock {  
+        background-color: default;
+        width: 90%;
+        padding: 10px;
+        border: 0px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: default;
+        font-size: 1.5em;
+        color: default;
+    }
+  }
 
-.blockquote {
-    background-color: #;
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
+ /* The pullquote class uses large text and border top/bottom properties.  */
+.pullquote {
+    display: block;
+    background-color: default;
+    width: 70%;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 10%;
-}
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font: default;
+    font-size: 1em;
+    color: default;
+  }
 
-/* Change your button colors and other attributes here. */
+/* Change unordered list from disc (default) to circle, square, or none. */
+ul {
+    list-style-type: disc;
+    font: default;
+    font-size: 1em;
+    font-weight: none;
+    line-height: 2.2;
+    padding-left: none;
+  }
+
+/* Change ordered list to upper-roman or lower-alpha. */
+ol {
+    list-style-type: default;
+    font: default;
+    font-size: 1em;
+    font-weight: none;
+    line-height: 2.2;
+    padding-left: none;
+  }
+
+/* This link uses a button design with hover effect to improve accessibility. */
 .buttonbox {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     border: 0px solid #;
-}
+  }
 
+/* Change button colors and other attributes here. */
 .button {
+    display: inline-block;
     background-color: #2A5DB0;
-    border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
-}
+    font: default;
+    font-size: 16px;
+    text-align: center;
+  }
 
 .button:hover {
     background-color: #4682B4;
-}
+  }
 
-/* Change unordered list from disc (default) to circle, square, or none. */
-.ul {
-    list-style-type: disc;
-    font-size: 20pt;
-    padding: 20px;
-}
+/* We use the HTML box model to style this content.Adjust img frame class selector properties to customize image frame. Copy, paste, rename class selector to quickly create alternative image stylings. */
+.frame {
+    display: block;
+    filter: grayscale(%);
+    filter: blur(px);
+    filter: hue-rotate(deg);
+    background: black;
+    padding: 5px;
+    border: 5px solid gold;
+    border-radius: 3%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* Change orderd list from upper-roman to lower-alpha. */
-.ol {
-    list-style-type: upper-roman;
-    font-size: 20pt;
-    padding: 20px;
-}
 
-/* Learn other list conventions: https://www.w3schools.com/cssref/pr_list-style-type.asp */
-
-.video {
+/* -Preset Polaroid */
+.polaroid {
+    display: block;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: none;
+    margin-bottom: none;
+  }
+  
+.polaroidcontainer {
     text-align: center;
+    padding: 10px 20px;
+  }
+
+
+/* -Preset Photo Grid -
+This code controls the photo grid .row, .column, .column img and @ media all work together to create your responsive image displays. Change the images on index.html. */
+
+.photogrid {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+ }
+
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+   justify-content: center;
+ }
+
+/* Change max-width value depending on number of columns. */
+.column {
+   flex: 25%;
+   max-width: 34%;
+   padding: 0 4px;
+ }
+
+.column img  {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+ }
+
+
+/* Photo Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
+@media screen and (max-width: 800px) {
+.column {
+       flex: 75%;
+       max-width: 75%;
+   }
+ }
+
+
+
+/*  - Image with Text Box -
+Add text to your image and control position*/
+
+.imagetext {
+  position: relative;
+  font-family: default;
+  font-size: default;
 }
+
+.text-box {
+  position: absolute;
+  /*Change location right/left and top/bottom. To center use top 50% left 50% */
+  bottom: 20px;
+  right: 20px;
+  /*Using rgba (red,blue,green, alpha) allows us to control color and opacity. For a white tinted text box, use 255, 255, 255, .3 */
+  background-color: rgba(0, 0, 0, .3);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*Using max-with property with pixels will prevent a left aligned box from overscrolling*/
+  max-width: 300px;
+}
+
+
+/*  - Parallax -
+This code controls that cool parallax image and scrolling effect. Change the image "fuego.jpg" below to match your asset.*/
+.parallax {
+    background-image: url("parallax.jpg");
+/* Set a specific height */
+    height: 500px;
+/* control the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+/* This code stops the parallax image and scrolling effect for small screens--at the moment, iPhones just don't like it.*/
+@media screen and (max-width: 768px) {
+    .parallax {
+		    background-attachment: inherit;
+        height: 100px;
+	  }
+  }
+
+/*  - YouTube Video -
+Uses container to control video across different screen sizes. */
+.video {
+    width: 75%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    text-align: center;
+  }
 
 .video-container {
   	position:relative;
+    height:0;
+  	overflow:hidden;
   	padding-bottom:56.25%;
   	padding-top:30px;
-  	height:0;
-  	overflow:hidden;
-    text-align: center;
   }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -117,142 +289,46 @@ body, html {
   	height:100%;
   }
 
+  @media screen and (max-width: 800px) {
+    .video {
+        width: 90%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+  }
 
-/* Preset Image Controls
-
-This section of CSS helps organize images to position and center the image to scale nicely on all screens */
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-}
-
-img.frame {
-    border: 5px solid black;
-    border-radius: 0%;
-    filter: grayscale(0%);
-}
-
-
+/*  - Caption -
+Style caption left, center, justify, right. */
 .caption {
+    display: block;
+    padding: none;
+    border: none;
+    margin: none;
     text-align: center;
-}
+  }
 
-.polaroid {
-    width: 50%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*  - Logo -
+Logo width controlled inline */
+.logo {
+    display: block;
+    padding: 10px;
+    border: none;
+    margin-top: 200px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-.polaroidcontainer {
-    text-align: center;
-    padding: 10px 20px;
-  }
-
-/*  - PARALLAX -
-This code controls that cool parallax image and scrolling effect. Change the image "fuego.jpg" below to match your asset.*/
-
-
-.parallax {
-    background-image: url("parallax.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* control the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-
-/* This code stops the parallax image and scrolling effect for small screens--at the moment, iPhones just don't it.*/
-@media screen and (max-width: 768px) {
-	.parallax {
-		background-attachment: inherit;
-    height: 100px;
-	}
-}
-
-
-/* -Preset Photo Grid -
-
-The following CSS is responsible for your photo grid .row, .column, .column img and @ media all work together to create your responsive image displays. Change the images on index.html.*/
-
-.photogrid {
-   text-align: center;
-   padding-top: 100px;
-   padding-bottom: 100px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-}
-
-/* Create 3 equal columns that sit next to each other */
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-
-/* Photo Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 75%;
-        max-width: 75%;
-    }
-}
-/* - Preset Text Block Controls-
-this CSS element centers text elements*/
-
-
-/* This CSS section controls the paragraph, video blocks*/
-@media screen and (min-width: 800px) {
-    .textblock, .video {
-        margin: auto;
-        width: 50%;
-        padding: 100px;
-        font-size: 125%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .textblock, .video {
-        margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 100px;
-        padding-bottom: : 1000px;
-    }
-}
-
-
-.logo {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font: default;
     font-size: 12pt;
     text-align: center;
   }
 
+/*  - Footer -
+Add a Copyright */
 .footer {
-        text-align: center;
-    }
+    border: none;
+    padding: 10px;
+    margin: auto;
+    font: default;
+    font-size: default;
+    text-align: center;    
+  }
