@@ -9,7 +9,7 @@ body, html {
   }  
 
 .hero-image {
-/* This code controls your "hero image." You may need to change "hero.jpg" name/format to match your asset, or vice-versa */
+/* This selector controls the "hero image" class. You may need to change "hero.jpg" name/format to match your asset, or vice-versa */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
     height: 100%;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ body, html {
     position: relative;
   }
 
-/* Places text in the middle of the image */
+/* This selector places text in the middle of the image */
 .hero-text {
     text-align: center;
     position: absolute;
@@ -28,7 +28,7 @@ body, html {
     transform: translate(-50%, -50%);
   }
 
-/* This selector controls hero-text class properties. 2em is 2x stated value. 5 em is 5x stated value. */
+/* The next two selectors control hero-text font properties. 2em is 2x default font-size value. 5 em is 5x stated value. */
 .hero-text h1 {
     font-family: default;
     font-size: 5em;
@@ -41,7 +41,8 @@ body, html {
     color: white;
   }
   
- /* The textblock class is set to default colors. You will also need to adjust values in next textblock selector. */
+
+ /* The textblock class selector controls the textblock on screens >800px. You will also need to adjust values in the next textblock selector. */
 .textblock {
     display: block;
     color: default;
@@ -58,7 +59,7 @@ body, html {
     color: default;
   }
 
- /* This code helps your textblock scale for smaller screens */
+ /* This code helps your textblock scale for screens ≤800px. */
   @media screen and (max-width: 800px) {
     .textblock {  
         background-color: default;
@@ -75,7 +76,8 @@ body, html {
     }
   }
 
- /* The pullquote class uses large text and border top/bottom properties.  */
+
+ /* The pullquote class selector uses large text and border top/bottom properties.  */
 .pullquote {
     display: block;
     background-color: default;
@@ -93,7 +95,9 @@ body, html {
     color: default;
   }
 
-/* Change unordered list from disc (default) to circle, square, or none. */
+
+/* - Bulleted Points or List -
+Unordered list element selector. Change unordered list from disc (default) to circle, square, or none. */
 ul {
     list-style-type: disc;
     font: default;
@@ -103,7 +107,7 @@ ul {
     padding-left: none;
   }
 
-/* Change ordered list to upper-roman or lower-alpha. */
+/* Ordered list element selector. Change ordered list to upper-roman or lower-alpha. */
 ol {
     list-style-type: default;
     font: default;
@@ -113,7 +117,9 @@ ol {
     padding-left: none;
   }
 
-/* This link uses a button design with hover effect to improve accessibility. */
+
+/* - Link that Looks Like a Button -
+Buttonbox class selector uses Flex Box Design (flex display) to scale the element in one dimension. */
 .buttonbox {
     display: flex;
     justify-content: center;
@@ -135,11 +141,53 @@ ol {
     text-align: center;
   }
 
+/* Hover effect improves accessibility. */
 .button:hover {
     background-color: #4682B4;
   }
 
-/* We use the HTML box model to style this content.Adjust img frame class selector properties to customize image frame. Copy, paste, rename class selector to quickly create alternative image stylings. */
+
+/* - Photo Grid using CSS Grid Design -
+Photo Grid uses CSS grid design to create responsive content. Reuse .column class to create additional grids with different proportions */
+
+.grid {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+ }
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+   justify-content: center;
+ }
+
+
+/* Change max-width value depending on number of columns. */
+.column {
+   flex: 25%;
+   max-width: 34%;
+   padding: 0 4px;
+ }
+
+.column img  {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+ }
+
+/* Photo Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
+@media screen and (max-width: 800px) {
+.column {
+       flex: 75%;
+       max-width: 75%;
+   }
+ }
+
+ 
+/* - Image Frame -
+We use the HTML box model to style this content. Adjust img frame class selector properties to customize image frame. Copy, paste, rename class selector to quickly create alternative image stylings. */
 .frame {
     display: block;
     filter: grayscale(%);
@@ -156,7 +204,9 @@ ol {
   }
 
 
-/* -Preset Polaroid */
+
+/* - Polaroid - 
+Polaroid class selector and container. Adjust Polaroid width here. */
 .polaroid {
     display: block;
     width: 50%;
@@ -172,46 +222,6 @@ ol {
     text-align: center;
     padding: 10px 20px;
   }
-
-
-/* -Preset Photo Grid -
-This code controls the photo grid .row, .column, .column img and @ media all work together to create your responsive image displays. Change the images on index.html. */
-
-.photogrid {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
- }
-
- .row {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0 4px;
-   justify-content: center;
- }
-
-/* Change max-width value depending on number of columns. */
-.column {
-   flex: 25%;
-   max-width: 34%;
-   padding: 0 4px;
- }
-
-.column img  {
-   margin-top: 8px;
-   vertical-align: middle;
-   width: 100%;
- }
-
-
-/* Photo Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
-@media screen and (max-width: 800px) {
-.column {
-       flex: 75%;
-       max-width: 75%;
-   }
- }
-
 
 
 /*  - Image with Text Box -
@@ -261,6 +271,7 @@ This code controls that cool parallax image and scrolling effect. Change the ima
 	  }
   }
 
+
 /*  - YouTube Video -
 Uses container to control video across different screen sizes. */
 .video {
@@ -297,6 +308,7 @@ Uses container to control video across different screen sizes. */
     }
   }
 
+
 /*  - Caption -
 Style caption left, center, justify, right. */
 .caption {
@@ -306,6 +318,7 @@ Style caption left, center, justify, right. */
     margin: none;
     text-align: center;
   }
+
 
 /*  - Logo -
 Logo width controlled inline */
@@ -321,6 +334,7 @@ Logo width controlled inline */
     font-size: 12pt;
     text-align: center;
   }
+
 
 /*  - Footer -
 Add a Copyright */
