@@ -28,15 +28,15 @@ body, html {
     transform: translate(-50%, -50%);
   }
 
-/* The next two selectors control hero-text font properties. 2em is 2x default font-size value. 5 em is 5x stated value. */
+/* The next two selectors control hero-text font properties. 2em is 2x inherited font-size value. 5 em is 5x stated value. */
 .hero-text h1 {
-    font-family: default;
+    font-family: inherit;
     font-size: 5em;
     color: white;
   }
 
 .hero-text h2 {
-    font-family: default;
+    font-family: inherit;
     font-size: 2em;
     color: white;
   }
@@ -45,8 +45,8 @@ body, html {
  /* The textblock class selector controls the textblock on screens >800px. You will also need to adjust values in the next textblock selector. */
 .textblock {
     display: block;
-    color: default;
-    background-color: default;
+    color: inherit;
+    background-color: inherit;
     border: 0px solid black;
     width: 55%;
     padding: 40px;
@@ -54,15 +54,15 @@ body, html {
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    font-family: default;
+    font-family: inherit;
     font-size: 1.5em;
-    color: default;
+    color: inherit;
   }
 
  /* This code helps your textblock scale for screens ≤800px. */
   @media screen and (max-width: 800px) {
     .textblock {  
-        background-color: default;
+        background-color: inherit;
         width: 90%;
         padding: 10px;
         border: 0px solid black;
@@ -70,9 +70,9 @@ body, html {
         margin-bottom: 100px;
         margin-left: auto;
         margin-right: auto;
-        font-family: default;
+        font-family: inherit;
         font-size: 1.5em;
-        color: default;
+        color: inherit;
     }
   }
 
@@ -80,7 +80,7 @@ body, html {
  /* The pullquote class selector uses large text and border top/bottom properties.  */
 .pullquote {
     display: block;
-    background-color: default;
+    background-color: inherit;
     width: 70%;
     padding-left: 20px;
     padding-right: 20px;
@@ -90,9 +90,9 @@ body, html {
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    font: default;
+    font: inherit;
     font-size: 1em;
-    color: default;
+    color: inherit;
   }
 
 
@@ -100,7 +100,7 @@ body, html {
 Unordered list element selector. Change unordered list from disc (default) to circle, square, or none. */
 ul {
     list-style-type: disc;
-    font: default;
+    font: inherit;
     font-size: 1em;
     font-weight: none;
     line-height: 2.2;
@@ -109,8 +109,8 @@ ul {
 
 /* Ordered list element selector. Change ordered list to upper-roman or lower-alpha. */
 ol {
-    list-style-type: default;
-    font: default;
+    list-style-type: inherit;
+    font: inherit;
     font-size: 1em;
     font-weight: none;
     line-height: 2.2;
@@ -136,7 +136,7 @@ Buttonbox class selector uses Flex Box Design (flex display) to scale the elemen
     padding: 15px 32px;
     border: none;
     cursor: pointer;
-    font: default;
+    font: inherit;
     font-size: 16px;
     text-align: center;
   }
@@ -147,8 +147,8 @@ Buttonbox class selector uses Flex Box Design (flex display) to scale the elemen
   }
 
 
-/* - Photo Grid using CSS Grid Design -
-Photo Grid uses CSS grid design to create responsive content. Reuse .column class to create additional grids with different proportions */
+/* - CSS Grid -
+CSS grid design creates responsive content. Reuse .column class to create additional grids with different proportions for specific content */
 
 .grid {
   text-align: center;
@@ -163,11 +163,10 @@ Photo Grid uses CSS grid design to create responsive content. Reuse .column clas
    justify-content: center;
  }
 
-
 /* Change max-width value depending on number of columns. */
 .column {
    flex: 25%;
-   max-width: 34%;
+   max-width: 25%;
    padding: 0 4px;
  }
 
@@ -177,7 +176,7 @@ Photo Grid uses CSS grid design to create responsive content. Reuse .column clas
    width: 100%;
  }
 
-/* Photo Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
+/* CSS Grid Responsive layout - makes grid a one column-layout instead of two or three columns */
 @media screen and (max-width: 800px) {
 .column {
        flex: 75%;
@@ -223,14 +222,20 @@ Polaroid class selector and container. Adjust Polaroid width here. */
     padding: 10px 20px;
   }
 
+.polaroid img {
+    filter: grayscale(%);
+    filter: blur(px);
+    filter: hue-rotate(deg);
+  }
+
 
 /*  - Image with Text Box -
 Add text to your image and control position*/
 
 .imagetext {
   position: relative;
-  font-family: default;
-  font-size: default;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .text-box {
@@ -330,7 +335,7 @@ Logo width controlled inline */
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    font: default;
+    font: inherit;
     font-size: 12pt;
     text-align: center;
   }
@@ -342,7 +347,7 @@ Add a Copyright */
     border: none;
     padding: 10px;
     margin: auto;
-    font: default;
-    font-size: default;
+    font: inherit;
+    font-size: inherit;
     text-align: center;    
   }
