@@ -42,14 +42,13 @@ body, html {
   }
   
 
- /* The textblock class selector controls the textblock on screens >800px. You will also need to adjust values in the next textblock selector. */
-.textblock {
+ /* The text-block class selector controls the text-block on screens >800px. You will also need to adjust values in the next text-block selector. */
+.text-block {
     display: block;
-    color: inherit;
-    background-color: inherit;
-    border: 0px solid black;
     width: 55%;
-    padding: 40px;
+    background-color: inherit;
+    padding: 0px;
+    border: 0px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: auto;
@@ -59,29 +58,30 @@ body, html {
     color: inherit;
   }
 
- /* This code helps your textblock scale for screens ≤800px. */
+ /* This code helps your text-block scale for screens ≤800px. */
   @media screen and (max-width: 800px) {
-    .textblock {  
-        background-color: inherit;
+    .text-block {  
+        display: block;
         width: 90%;
-        padding: 10px;
+        background-color: inherit;
+        padding: 0px;
         border: 0px solid black;
         margin-top: 100px;
         margin-bottom: 100px;
         margin-left: auto;
         margin-right: auto;
         font-family: inherit;
-        font-size: 1.5em;
+        font-size: 1.25em;
         color: inherit;
     }
   }
 
 
- /* The pullquote class selector uses large text and border top/bottom properties.  */
-.pullquote {
+ /* The pull-quote class selector uses large text and border top/bottom properties.  */
+.pull-quote {
     display: block;
-    background-color: inherit;
     width: 70%;
+    background-color: inherit;
     padding-left: 20px;
     padding-right: 20px;
     border-top: 3px solid #000;
@@ -100,44 +100,44 @@ body, html {
 Unordered list element selector. Change unordered list from disc (default) to circle, square, or none. */
 ul {
     list-style-type: disc;
+    padding-left: none;
     font: inherit;
     font-size: 1em;
-    font-weight: none;
     line-height: 2.2;
-    padding-left: none;
+    color: inherit;
   }
 
 /* Ordered list element selector. Change ordered list to upper-roman or lower-alpha. */
 ol {
     list-style-type: inherit;
+    padding-left: none;
     font: inherit;
     font-size: 1em;
-    font-weight: none;
     line-height: 2.2;
-    padding-left: none;
+    color: inherit;
   }
 
 
 /* - Link that Looks Like a Button -
-Buttonbox class selector uses Flex Box Design (flex display) to scale the element in one dimension. */
-.buttonbox {
+Button-box class selector uses Flex Box Design (flex display) to scale the element in one dimension. */
+.button-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 200px;
     border: 0px solid #;
+    align-items: center;
+    justify-content: center;
   }
 
 /* Change button colors and other attributes here. */
 .button {
     display: inline-block;
     background-color: #2A5DB0;
-    color: white;
     padding: 15px 32px;
     border: none;
     cursor: pointer;
     font: inherit;
     font-size: 16px;
+    color: white;
     text-align: center;
   }
 
@@ -151,9 +151,9 @@ Buttonbox class selector uses Flex Box Design (flex display) to scale the elemen
 CSS grid design creates responsive content. Reuse .column class to create additional grids with different proportions for specific content */
 
 .grid {
-  text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  text-align: center;
  }
 
 .row {
@@ -185,13 +185,11 @@ CSS grid design creates responsive content. Reuse .column class to create additi
  }
 
  
-/* - Image Frame -
-We use the HTML box model to style this content. Adjust img frame class selector properties to customize image frame. Copy, paste, rename class selector to quickly create alternative image stylings. */
+/* - Frame class selector -
+Use HTML box model to style content. Adjust frame/filter class selector properties to customize frame/image. Copy, paste, rename class selector to quickly create alternative image stylings. */
 .frame {
     display: block;
-    filter: grayscale(%);
-    filter: blur(px);
-    filter: hue-rotate(deg);
+    width: 50%;
     background: black;
     padding: 5px;
     border: 5px solid gold;
@@ -202,7 +200,12 @@ We use the HTML box model to style this content. Adjust img frame class selector
     margin-right: auto;
   }
 
-
+.frame img {
+    filter: grayscale(89%);
+    filter: blur(px);
+    filter: hue-rotate(deg);
+    width:100%;
+}
 
 /* - Polaroid - 
 Polaroid class selector and container. Adjust Polaroid width here. */
@@ -216,30 +219,40 @@ Polaroid class selector and container. Adjust Polaroid width here. */
     margin-top: none;
     margin-bottom: none;
   }
-  
-.polaroidcontainer {
-    text-align: center;
-    padding: 10px 20px;
-  }
 
 .polaroid img {
+    width: 100%;  /* Keep 100% */
     filter: grayscale(%);
     filter: blur(px);
     filter: hue-rotate(deg);
   }
 
+.polaroid-caption {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
 
 /*  - Image with Text Box -
-Add text to your image and control position*/
-
-.imagetext {
+Add text to your image and control text-box location*/
+.image-text-box {
+  display: block;
   position: relative;
-  font-family: inherit;
-  font-size: inherit;
+  width: 90%;
+  margin-top: 100px;
+  margin-bottom:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-text-box img {
+  width: 100%;   /* Keep 100% */
 }
 
 .text-box {
   position: absolute;
+  /*Using max-with property with pixels will prevent a left aligned box from overscrolling*/
+  max-width: 300px;
   /*Change location right/left and top/bottom. To center use top 50% left 50% */
   bottom: 20px;
   right: 20px;
@@ -248,8 +261,8 @@ Add text to your image and control position*/
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  /*Using max-with property with pixels will prevent a left aligned box from overscrolling*/
-  max-width: 300px;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 
@@ -264,15 +277,15 @@ This code controls that cool parallax image and scrolling effect. Change the ima
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 0px;
   }
 
 /* This code stops the parallax image and scrolling effect for small screens--at the moment, iPhones just don't like it.*/
 @media screen and (max-width: 768px) {
     .parallax {
 		    background-attachment: inherit;
-        height: 100px;
+        height: 400px;
 	  }
   }
 
@@ -308,8 +321,8 @@ Uses container to control video across different screen sizes. */
   @media screen and (max-width: 800px) {
     .video {
         width: 90%;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
   }
 
@@ -330,7 +343,7 @@ Logo width controlled inline */
 .logo {
     display: block;
     padding: 10px;
-    border: none;
+    border: 0px solid black;
     margin-top: 200px;
     margin-bottom: 0px;
     margin-left: auto;
