@@ -42,7 +42,7 @@ body, html {
   }
   
 
- /* The text-block class selector controls the text-block on screens >800px. You will also need to adjust values in the next text-block selector. */
+ /* The text-block class selector controls the text-box on screens >800px. You will also need to adjust values in the next text-box selector. */
 .text-block {
     display: block;
     width: 55%;
@@ -99,7 +99,7 @@ body, html {
 /* - Bulleted Points or List -
 Unordered list element selector. Change unordered list from disc (default) to circle, square, or none. */
 ul {
-    list-style-type: disc;
+    list-style-type: default;
     padding-left: none;
     font: inherit;
     font-size: 1em;
@@ -109,7 +109,7 @@ ul {
 
 /* Ordered list element selector. Change ordered list to upper-roman or lower-alpha. */
 ol {
-    list-style-type: inherit;
+    list-style-type: default;
     padding-left: none;
     font: inherit;
     font-size: 1em;
@@ -147,10 +147,10 @@ Button-box class selector uses Flex Box Design (flex display) to scale the eleme
   }
 
 
-/* - CSS Grid -
-CSS grid design creates responsive content. Reuse .column class to create additional grids with different proportions for specific content */
+/* - CSS Flexbox Layout -
+CSS Flexbox creates responsive layouts for images, text, and other content. Reuse .column class to create additional grids with different proportions for specific content */
 
-.grid {
+.flexbox-container {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
@@ -186,11 +186,11 @@ CSS grid design creates responsive content. Reuse .column class to create additi
 
  
 /* - Frame class selector -
-Use HTML box model to style content. Adjust frame/filter class selector properties to customize frame/image. Copy, paste, rename class selector to quickly create alternative image stylings. */
+Use CSS box model to style image content. Adjust frame/filter class selector properties to customize. Copy, paste, rename class selector to quickly create alternative image stylings. */
 .frame {
     display: block;
     width: 50%;
-    background: black;
+    background: blue;
     padding: 5px;
     border: 5px solid gold;
     border-radius: 3%;
@@ -198,14 +198,11 @@ Use HTML box model to style content. Adjust frame/filter class selector properti
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-.frame img {
-    filter: grayscale(89%);
+    filter: grayscale(%);
     filter: blur(px);
     filter: hue-rotate(deg);
-    width:100%;
 }
+
 
 /* - Polaroid - 
 Polaroid class selector and container. Adjust Polaroid width here. */
@@ -233,9 +230,9 @@ Polaroid class selector and container. Adjust Polaroid width here. */
   }
 
 
-/*  - Image with Text Box -
+/*  - Image Container with Text Box -
 Add text to your image and control text-box location*/
-.image-text-box {
+.image-container {
   display: block;
   position: relative;
   width: 90%;
@@ -245,13 +242,13 @@ Add text to your image and control text-box location*/
   margin-right: auto;
 }
 
-.image-text-box img {
-  width: 100%;   /* Keep 100% */
+.image-container img {
+  width: 100%;   /* Keep 100%. Add Filters.*/
 }
 
-.text-box {
+.image-container-text {
   position: absolute;
-  /*Using max-with property with pixels will prevent a left aligned box from overscrolling*/
+  /*Using max-with property with pixels will prevent a left aligned box from over-scrolling*/
   max-width: 300px;
   /*Change location right/left and top/bottom. To center use top 50% left 50% */
   bottom: 20px;
