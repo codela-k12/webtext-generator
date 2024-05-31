@@ -4,9 +4,12 @@ Welcome to Codelo Webtext Generator! This tool allows the user to mix and match 
 
 Once you understand how this tool works, we recommend you fork this repository and create your own custom Webtext Generator.
     
-[Go to Codela](https://codela-k12.github.io/codela-tools/) to find more code-based tools and projects for the English Language Arts classroom.<p>&nbsp;</p>
+[Go to Codela](https://codela-k12.github.io/projects/) to find more code-based tools and projects for the English Language Arts classroom.<p>&nbsp;</p>
 
 [Watch our 3-min Codela Webtext Generator tutorial.](https://youtu.be/KVUBbM7pIYw?si=81tQ1FS9097FdWJd)
+
+    
+[Go to Codela](https://codela-k12.github.io/projects/) to find more code-based projects for the English Language Arts classroom and beyond.<p>&nbsp;</p>
 
     
 ## Get started! 
@@ -15,16 +18,16 @@ Once you understand how this tool works, we recommend you fork this repository a
 
 2. Find this project folder in your downloads and move it to a secure place on your local computer. You'll return to this project folder to manage your scripts, images, and other assets. 
 
-3. Download and/or open a text editor like [Pulsar](https://pulsar-edit.dev) or [Visual Studio Code](https://code.visualstudio.com/download) (Mac / Windows / Linux) or [Code Pad Text Editor](https://chrome.google.com/webstore/detail/code-pad-text-editor/adaepfiocmagdimjecpifghcgfjlfmkh?hl=en-GB) for Chromebooks. See instructions below on how to optimize your text editor.       
+3. Download and/or open a code editor. We recommend [Phoenix Code](https://phcode.dev) which runs on a browser or [download](https://phcode.io/#/home) a desktop version. See more information on code editors below.  
 
-4. Use the text editor to open the index.html document. Read through the code comments embedded in the index.html document. Here, you'll find all the information you need to work with code!  
+4. Use the code editor to open the index.html document. Read through the code comments embedded in the index.html document. Here, you'll find all the information you need to work with code!  
 
-5. Once you have added/modified content in your project folder, you can share your it with others. To view your project, simply open the index.html file in a browser window.   
+5. Once you have modified content in your project folder, you can share  the folder with others. To view a project, simply open the index.html file in a browser window.    
 
 
 ## Publishing to GitHub (optional)
 
-6. You can publish your project to the web using GitHub. GitHub provides a good solution for "free" publishing. [Open GitHub](https://github.com), sign-in, or create a GitHub account.
+6. You can publish your project to the web using GitHub. GitHub provides a good solution for "free" publishing. [Go to GitHub](https://github.com), sign-in, or create a GitHub account.
 
 7. Once you have an account, create a "**new repository**" to store your files. Click  "**uploading an existing file**" and add ALL of your individual project assets to your repository. After each asset is uploaded, hit "**Commit changes**." 
 
@@ -35,9 +38,21 @@ Once you understand how this tool works, we recommend you fork this repository a
 10. Test the URL in a browser. Magic, no? Actually, it's computer science. <p>&nbsp;</p>  
  
 
-## Text Editors 
+ 
+ 
+## Code Editors 
 
-Setting up Pulsar or VS Code for Mac / Windows / Linux or CodePad for Chromebooks 
+You have a range of code editor options depending on your operating system, but we recommend [Phoenix Code](https://phcode.dev) because it works across all operating systems, it comes with HTML preview already installed, and it's free and open-source
+
+
+###Phoenix Code (Download or use Online)
+[See Video Tutorial]()
+
+1. Go to [Phoenix Code](https://phcode.dev). 
+1. Use the online version or [download](https://phcode.io/#/home) a desktop app for Mac, Windows, Linux. 
+1. Adjust text wrapping, select **View>Word Wrap**
+1. Enjoy the live preview.
+
 
 ### Pulsar (Open-Source for Mac / Windows / Linux)
 [See Video Tutorial](https://youtu.be/dKcJm4V53ig)
@@ -64,12 +79,6 @@ Setting up Pulsar or VS Code for Mac / Windows / Linux or CodePad for Chromebook
 	* In the search bar type "**Code Spell Check**." Install.
 1. Adjust text wrapping on index.html 
 	* from the dropdown menu, select **View>Word Wrap** (this will force lines of code to conform to your viewer tab.)
-
-### Code Pad (Chromebook)
-
-1. Download "**[Code Pad Text Editor](https://chrome.google.com/webstore/detail/code-pad-text-editor/adaepfiocmagdimjecpifghcgfjlfmkh?hl=en-GB)**" from Chrome Web Store. 
-1. From the dropdown menu, select **Editor>IDE Preferences**
-1. Toggle "**Word wrap limit**" to the middle value (this will force lines of code to conform to your viewer tab.)<p>&nbsp;</p>
 
 
 
