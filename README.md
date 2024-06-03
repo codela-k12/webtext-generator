@@ -8,17 +8,16 @@ Once you understand how this tool works, we recommend you fork this repository a
 
 [Watch our 3-min Codela Webtext Generator tutorial.](https://youtu.be/KVUBbM7pIYw?si=81tQ1FS9097FdWJd)
 
-    
-[Go to Codela](https://codela-k12.github.io/projects/) to find more code-based projects for the English Language Arts classroom and beyond.<p>&nbsp;</p>
+   
 
     
 ## Get started! 
 
 1. Scroll to the top of this repository and click the green "**Code**" button. Select "**Download ZIP**" to download project files to your local computer. These are all the project files you'll need to get started working with code.
 
-2. Find this project folder in your downloads and move it to a secure place on your local computer. You'll return to this project folder to manage your scripts, images, and other assets. 
+2. Find this project folder in your downloads and move it to a secure place on your local computer or cloud drive. You'll return to this project folder to manage your scripts, images, and other assets. 
 
-3. Download and/or open a code editor. We recommend [Phoenix Code](https://phcode.dev) which runs on a browser or [download](https://phcode.io/#/home) a desktop version. See more information on code editors below.  
+3. Download and/or open a code editor. We recommend [Phoenix Code](https://phcode.dev) which runs on a browser or [download](https://phcode.io/#/home) a desktop version. See more information on code editors below (including video tutorials!)    
 
 4. Use the code editor to open the index.html document. Read through the code comments embedded in the index.html document. Here, you'll find all the information you need to work with code!  
 
@@ -40,19 +39,22 @@ Once you understand how this tool works, we recommend you fork this repository a
 
  
  
-## Code Editors 
+## Phoenix code editor 
 
 You have a range of code editor options depending on your operating system, but we recommend [Phoenix Code](https://phcode.dev) because it works across all operating systems, it comes with HTML preview already installed, and it's free and open-source
 
 
-###Phoenix Code (Download or use Online)
-[See Video Tutorial]()
+### Phoenix Code (Download or use Online)
+[See Video Tutorial](https://youtu.be/j8o506PZ1H8)
 
 1. Go to [Phoenix Code](https://phcode.dev). 
 1. Use the online version or [download](https://phcode.io/#/home) a desktop app for Mac, Windows, Linux. 
 1. Adjust text wrapping, select **View>Word Wrap**
-1. Enjoy the live preview.
+1. Enjoy the live preview.<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 
+
+
+## Support for other code editors
 
 ### Pulsar (Open-Source for Mac / Windows / Linux)
 [See Video Tutorial](https://youtu.be/dKcJm4V53ig)
